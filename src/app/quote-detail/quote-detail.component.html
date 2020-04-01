@@ -1,1 +1,8 @@
-<p>quote-detail works!</p>
+<h5 class="card-subtitle "> author: {{ quote.author }} <span id="period"> Posted: {{ quote.dateOfPost|dateCount}} days ago. </span> </h5>
+
+<div class="container-fluid" id="buttons">
+    <button (click)='upvote()'class="btn btn-sm btn-success"> {{ quote.likes }} <i class="fa fa-thumbs-up" id="likes"></i></button>
+    <button (click)='downvote()' class="btn btn-sm btn-danger" id="dislikes"> {{ quote.dislikes }} <i class="fa fa-thumbs-down" ></i></button>
+    <button (click)='quoteDelete(true)' class="btn btn-sm btn-danger" id="delete" ><i class="fa fa-trash" id="delete-icon"></i></button>
+</div>
+
