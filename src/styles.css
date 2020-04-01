@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Abel|Indie+Flower|Londrina+Outline|Neucha|Offside&display=swap");
+
+body{
+    background-image: url(./assets/gray-wall-with-cracked-blue-paint-2096543.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
