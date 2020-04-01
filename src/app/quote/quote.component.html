@@ -14,7 +14,7 @@
                             <h4 class="card-title"> {{ quote.title }}<button (click)='toggleDetails(i)' class="btn btn-primary" id="details-button">Details</button> </h4>
                             <p class="card-text" id=""> {{ quote.quote }} </p><br>
                             
-                            <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail> -->
+                            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
                             <span class="card-subtitle">by : <span id="name"> {{ quote.name }} </span><span id="date">on :<span id="date-color"> {{ quote.dateOfPost|date }}</span></span> </span>
                         </div>
                     </div>
