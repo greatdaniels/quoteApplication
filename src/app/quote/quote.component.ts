@@ -1,10 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote'
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  styleUrls: ['./quote.component.css'],
+  animations: [
+    trigger('fade', [
+
+      state('void', style({ opacity: 0 })),
+
+      // transition('void => *', [
+      //   style({ opacity: 0 }),
+      //   animate(2500)
+      // ]),
+
+      transition('* <=> void', [
+        animate(2000)
+      ])
+    ])
+  ]
 })
 export class QuoteComponent implements OnInit {
 
