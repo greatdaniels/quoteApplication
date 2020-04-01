@@ -16,6 +16,10 @@ export class QuoteComponent implements OnInit {
     new Quote(3, 'Mayuko','Art resides Within','Every child is an artist, the problem is staying an artist when you grow up','Pablo Picasso', new Date(2020,2,29),0,0),
   ]
 
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

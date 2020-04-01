@@ -1,4 +1,4 @@
-<h5 class="card-subtitle "> author: {{ quote.author }} <span id="period"> Posted: {{ quote.dateOfPost|dateCount}} days ago. </span> </h5>
+<h5 class="card-subtitle "> author: {{ quote.author }} <span id="period"> Posted: {{ quote.dateOfPost|date}} days ago. </span> </h5>
 
 <div class="container-fluid" id="buttons">
     <button (click)='upvote()'class="btn btn-sm btn-success"> {{ quote.likes }} <i class="fa fa-thumbs-up" id="likes"></i></button>
