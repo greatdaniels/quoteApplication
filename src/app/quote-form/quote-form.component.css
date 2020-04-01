@@ -1,0 +1,25 @@
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 2px 2px black;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    font-family: 'Neucha', cursive;
+    
+}
+
+.input-header{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.form-control{
+    color: whitesmoke;
+    background: transparent;
+    font-size: large;
+}
+
+label{
+    color: whitesmoke;
+    font-size: larger;
+}
