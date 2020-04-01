@@ -1,6 +1,6 @@
 <div class="overlay">
 
-    <h1> {{ title|titlecase}} </h1>
+    <!-- <h1> {{ title|titlecase}} </h1> -->
 
     <div class="container-fluid">
 
@@ -9,21 +9,21 @@
             <div class="col-md-8">
                 <div class="cards">
                     <!-- Quotes go here in cards -->
-                    <div class="card" *ngFor='let quote of quotes; let i = index' style="width: 32rem;" @fade>
-                        <div class="card-body">
+                    <!-- <div class="card" *ngFor='let quote of quotes; let i = index' style="width: 32rem;" @fade> -->
+                        <!-- <div class="card-body">
                             <h4 class="card-title"> {{ quote.title }}<button (click)='toggleDetails(i)' class="btn btn-primary" id="details-button">Details</button> </h4>
                             <p class="card-text" id=""> {{ quote.quote }} </p><br>
                             
                             <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
                             <span class="card-subtitle">by : <span id="name"> {{ quote.name }} </span><span id="date">on :<span id="date-color"> {{ quote.dateOfPost|date }}</span></span> </span>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
 
             <div class="col-md-4">
                 <!-- input form goes here -->
-                <app-quote-form (addQuote)='addNewQuote($event)' ></app-quote-form>
+                <!-- <app-quote-form (addQuote)='addNewQuote($event)' ></app-quote-form> -->
             </div>
 
         </div>
