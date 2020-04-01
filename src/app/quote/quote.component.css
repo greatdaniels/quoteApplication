@@ -1,0 +1,69 @@
+.overlay{
+    background: transparent;
+    background-color: rgba(177, 189, 189, 0.3);
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 5%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin-bottom: 3%;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.card-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Offside', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+
+#details-button{
+    float: right;
+}
+
+h4{
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+}
+
+span{
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+}
+
+#name{
+    color: teal;
+}
+
+#date{
+    float: right;
+}
+
+#date-color{
+    color: rgba(67, 161, 72, 1);
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Offside', cursive;
+}
