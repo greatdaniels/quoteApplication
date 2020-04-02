@@ -1,6 +1,12 @@
 # QuoteApplication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## Author
+
+[Dan_Njoroge](https://github.com/greatdaniels)
+
+## Description
+
+This is an angular app that displays quotes, allows users to create a quote, upvote, downvote, and delete quotes.
 
 ## Development server
 
