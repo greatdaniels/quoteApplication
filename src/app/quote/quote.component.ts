@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '../quote'
+import { Quote } from '../quote';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -72,7 +72,4 @@ export class QuoteComponent implements OnInit {
     const most = Math.max.apply(Math, best);
     
   }
- 
 }
-
-
