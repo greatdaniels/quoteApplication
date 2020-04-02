@@ -53,9 +53,26 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote)
   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  mostLikes(best) {
+    best = [];
+    this.quotes.forEach(quote => {
+      best.push(quote.likes);
+    });
+    const most = Math.max.apply(Math, best);
+    return most;
   }
 
+  constructor() { }
+
+  ngOnInit() {
+    const best = [];
+    this.quotes.forEach(quote => {
+      best.push(quote.likes);
+    });
+    const most = Math.max.apply(Math, best);
+    
+  }
+ 
 }
+
+

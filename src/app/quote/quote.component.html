@@ -5,6 +5,27 @@
     <div class="container-fluid">
 
         <div class="row">
+            <div class="col-md-12">
+                
+                <div class="cards">
+                    <div class="mostLiked" *ngFor='let quote of quotes; let i = index' style="width: 32rem;" @fade>
+                        <div class="card" *ngIf='quote.likes == mostLikes(i) && mostLikes(i) > 0' @fade>
+                        
+                            <div class="card-body" >
+                                <h3 class="bestQuote text-center">Most Liked Quote</h3>
+                                <h4 appHighlight class="card-title"> {{ quote.title }}</h4>
+                                <p appHighlight class="card-text" id=""> {{ quote.quote }} </p><br>
+                                
+                                <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail> -->
+                                <span class="card-subtitle">Author : <span id="name"> {{ quote.author }}</span> </span>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
 
             <div class="col-md-8">
                 <div class="cards">
